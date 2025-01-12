@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oguz landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="max-w-7xl m-auto p-4 cursor">
+      <header class="flex justify-between">
+        <div class="flex items-center space-x-4 font-semibold">
+          <h2>
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-outlined/24/new-post.png"
+              alt="new-post"
+            />
+          </h2>
+          <h2>h1@oguz.design</h2>
+        </div>
+        <nav>
+          <div class="space-x-10 max-sm:hidden font-medium">
+            <a href="#">Works</a>
+            <a href="#">Resume</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+          <img
+            src="./assests/menu.svg"
+            aria-label="Toggle navigation"
+            role="button"
+            tabindex="0"
+            alt="menu icon"
+            width="20px"
+            height="20px"
+            aria-label="menu icon"
+            class="hidden max-sm:block text-white"
+          />
+        </nav>
+      </header>
+      <main class="flex flex-col items-center mt-12">
+        <div
+          class="w-[125px] h-[125px] bg-sky-100 rounded-full flex justify-center items-center"
+        >
+          <img src="./assests/man.png" width="70" height="70" alt="man" />
+        </div>
+        <div
+          class="flex justify-center items-center flex-col text-center my-6 font-medium"
+        >
+          <h2 class="">Hi, I'm Oguz <span>🤟</span></h2>
+          <h3
+            class="my-6 text-6xl max-sm:text-5xl font-semibold tracking-[-.05rem] max-w-2xl"
+          >
+            Building digital products, brands and experience
+          </h3>
+          <h4 class="">
+            a <span class="font-semibold">Product Designer</span> and
+            <span class="font-semibold">Visual Developer</span> in SF
+          </h4>
+          <p class="max-w-[430px]">
+            I specialize in UX/UI Design, Responsive Web Design, and Visual
+            Development
+          </p>
+          <button class="mt-10 bg-[#131313] text-[#f1f1f1] rounded-3xl p-4">
+            Connect with me
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
