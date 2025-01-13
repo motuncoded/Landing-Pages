@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vercel hero landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="">
+      <div class="grid grid-cols-[12fr_1fr] bg-[#efefef] px-4 py-2">
+        <div class="flex justify-center items-center space-x-2">
+          <p class="flex">Vercel requires Turborepo. Build Monorepos. Faster</p>
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material-rounded/24/right.png"
+            alt="right"
+          />
+        </div>
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/material-outlined/24/828282/multiply--v1.png"
+          alt="multiply--v1"
+        />
+      </div>
+      <div class="max-w-6xl m-auto py-5 px-2">
+        <header class="flex justify-between items-center">
+          <h1 class="font-medium flex justify-center items-center text-2xl">
+            <img src="./assets/vercel_logo.svg" alt="" srcset="" />
+
+            Vercel
+          </h1>
+          <nav
+            class="flex justify-around items-center space-x-24 text-gray-500"
+          >
+            <div
+              class="flex items-center space-x-10 max-sm:hidden max-lg:hidden"
+            >
+              <a href="#" class="flex items-center"
+                >Features
+                <img
+                  width="24"
+                  height="24"
+                  src="https://img.icons8.com/material-outlined/24/828282/expand-arrow.png"
+                  alt="expand-arrow"
+                />
+              </a>
+              <a href="#">Templates</a>
+              <a href="#">Integrations</a>
+              <a href="#">Customers</a>
+              <a href="#">Pricing</a>
+            </div>
+
+            <div
+              class="space-x-6 flex items-center max-sm:hidden max-lg:hidden"
+            >
+              <a href="#">Contact</a>
+              <a href="#">Login</a>
+              <a href="#" class="px-4 py-2 rounded-lg bg-[#131313] text-[#eee]"
+                >Sign up</a
+              >
+            </div>
+
+            <img
+              src="./assets/menu.svg"
+              aria-label="Toggle navigation"
+              role="button"
+              tabindex="0"
+              alt="menu icon"
+              width="20px"
+              height="20px"
+              aria-label="menu icon"
+              class="lg:hidden max-sm:block text-white"
+            />
+          </nav>
+        </header>
+        <main class="pt-5 text-center max-sm:py-12">
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="font-bold text-9xl max-sm:text-8xl">
+              Develop<span
+                class="w-6 h-6 inline-block rounded-full bg-[#131313]"
+              ></span>
+            </h2>
+            <h2
+              class="text-9xl font-bold gradient bg-clip-text text-transparent max-sm:text-8xl"
+            >
+              Preview<span
+                class="w-6 h-6 -ml-2 inline-block rounded-full bg-[#ff0080]"
+              ></span>
+            </h2>
+            <h2 class="text-9xl font-bold max-sm:text-8xl">
+              Ship<span
+                class="w-6 h-6 inline-block rounded-full bg-[#131313]"
+              ></span>
+            </h2>
+          </div>
+          <div class="my-10 space-x-10">
+            <button class="w-[200px] py-2 rounded-md bg-[#131313] text-[#eee]">
+              Start Deploying
+            </button>
+            <button class="w-[200px] py-2 border-2 rounded-md text-gray-500">
+              Get a demo
+            </button>
+          </div>
+          <div
+            class="text-gray-500 text-center max-w-4xl m-auto max-lg:max-w-2xl max-sm:mt-2"
+          >
+            <p>
+              Vercel combines the best developer experience with an obsessive
+              focus on end-user performance.
+            </p>
+            <p>Our platform enables frontend teams to do their best work.</p>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
