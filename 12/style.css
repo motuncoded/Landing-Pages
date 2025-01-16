@@ -1,0 +1,10 @@
+body {
+  font-family: "Lora", serif;
+  background-color: #e9d7c9;
+  color: #131313;
+}
+.container {
+  max-width: 1280px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
