@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TruCourt landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="max-w-7xl m-auto px-4">
+      <header class="flex justify-between items-center font-bold py-3">
+        <h1 class="text-3xl">TruCourt</h1>
+        <nav class="flex space-x-4 max-md:hidden">
+          <a href="/">about</a>
+          <a href="/">trainer</a>
+          <a href="/">classes</a>
+        </nav>
+        <div class="flex space-x-4 max-md:hidden">
+          <button>contacts</button>
+          <button
+            class="bg-[#00423D] font-medium text-[#f0efea] rounded-3xl py-2 px-4"
+          >
+            get started
+          </button>
+        </div>
+        <img
+          src="./assets/menu.svg"
+          aria-label="Toggle navigation"
+          role="button"
+          tabindex="0"
+          alt="menu icon"
+          width="20"
+          height="20"
+          aria-label="menu icon"
+          class="hidden max-md:block"
+        />
+      </header>
+      <main class="my-4">
+        <section
+          class="bg-[#00423D] font-bold py-4 px-2 text-[#f0efea] min-h-[85vh] rounded-3xl flex justify-center items-center flex-col"
+        >
+          <div class="flex items-center flex-col">
+            <h2 class="text-6xl max-md:text-4xl text-center max-w-4xl mb-4">
+              Tennis Academy: Where champions are born!
+            </h2>
+            <p class="w-[450px] text-center mb-4 font-medium">
+              Start your path to success together with experienced coaches and
+              like-minded people in the cozy and friendly atmosphere of our
+              school.
+            </p>
+
+            <button
+              class="bg-[#f0efea] font-semibold text-[#00423d] rounded-3xl py-2 px-4 mb-6"
+            >
+              get started
+            </button>
+          </div>
+          <div
+            class="relative rounded-3xl w-full max-w-[1200px] h-[300px] overflow-hidden mb-4"
+          >
+            <img
+              src="./assets/man.jpg"
+              class="w-full h-full object-cover"
+              alt="Portait of man playing table tennis"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
