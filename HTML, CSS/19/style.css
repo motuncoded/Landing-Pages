@@ -8,3 +8,27 @@ body{
 li{
 list-style: none;
 }
+.slides{
+  width: 100%;
+  overflow: hidden;
+  animation: scroll 10s infinite linear;
+
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+ 
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .slides{
+    display:none
+  }
+}
