@@ -1,7 +1,7 @@
-body{
+body {
   background: url("./assets/background.jpg");
- background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  color: #fefefe;;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fefefe;
 }

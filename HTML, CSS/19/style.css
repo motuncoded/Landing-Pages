@@ -1,24 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-body{
-    background:url("./assets/background.jpg");
+body {
+  background: url("./assets/background.jpg");
   font-family: "Bellota", system-ui;
 }
-li{
-list-style: none;
+li {
+  list-style: none;
 }
-.slides{
+.slides {
   width: 100%;
   overflow: hidden;
   animation: scroll 10s infinite linear;
-
 }
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
- 
+
   50% {
     transform: translateX(-50%);
   }
@@ -28,7 +26,7 @@ list-style: none;
   }
 }
 @media screen and (max-width: 768px) {
-  .slides{
-    display:none
+  .slides {
+    display: none;
   }
 }

@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const taskModel = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String },
-  category: { type: String },
+  category: {
+    type: String,
+    enum: ["Work", "School", "Personal"],
+    required: true,
+  },
   deadline: { type: Date },
   completed: { type: Boolean, default: false },
   user: { type: mongoose.Schema.Types.ObjectId, ref: "user", required: true },

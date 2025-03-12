@@ -1,6 +1,5 @@
 // Task Controller
 
-
 const taskModel = require("../models/taskModel");
 
 // Create a task
@@ -115,6 +114,7 @@ const delete_a_task = async (req, res, next) => {
   }
 };
 
+//Get tasks by category
 module.exports = {
   create_a_task,
   get_a_task,

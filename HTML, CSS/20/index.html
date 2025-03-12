@@ -1,53 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagedone</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="px-6 py-6 max-sm:px-2">
-     <header class="flex justify-between items-center">
-           
-          <h1 class="font-bold text-2xl">WeThink</h1>
-          <nav class="flex space-x-6 max-md:hidden max-lg:hidden font-bold ">
-        <ul class="flex space-x-6">
-            <li class="hover:bg-[#fafafa] px-2 py-1 rounded-full ">Home</li>
-         <li class="hover:bg-[#fafafa] px-2 py-1 rounded-full ">Why</li>
-         <li class="hover:bg-[#fafafa] px-2 py-1 rounded-full ">Team</li>
-         <li class="hover:bg-[#fafafa] px-2 py-1 rounded-full ">FAQ</li>
-         <li class="hover:bg-[#fafafa] px-2 py-1 rounded-full ">Contact us</li>
-        </ul>
-            </nav>
-            <div class="space-x-4 font-bold">
-                <button>Sign in</button>
-                <button class=" bg-[#fff] px-2 py-1 rounded-full">Think for me</button>
-            </div>
-           </header>
-           <main class=" flex justify-center items-center flex-col max-w-full">
-            <section class="min-h-[85vh] flex justify-center items-center flex-col">
-                <h2 class="text-6xl font-bold mb-4 text-center">Rethink your business</h2>
-<h3 class=" font-bold mb-4 text-center">Seriously, think about it. If you don’t want to, we can do it for you.</h3>
-<h4 class="flex flex wrap justify-center items-center mb-4 max-w-full"><span class='flex'>Enter your</span> <img src="assets/telegram.png" alt="telegram-icon" class="max-sm:hidden"/> <span> Telegram or </span><img src="./assets/instagram.png" alt="instagram" class="max-sm:hidden"/> <span class='flex items-center'>Instagram nickname. We'll contact you.</span></h4>
-<div class="rounded-full bg-[#fafafa] w-[300px] flex justify-between items-center py-1 " >
-    <label for="email">
-    <input type="email" name="email" id="email" placeholder="@motuncoded" class="w-[100%] rounded-full bg-[#ffffff] pl-3 outline-none">
-</label>
-<button  class="rounded-full bg-[#131313] text-[#fafafa] text-[14px] py-1 px-2">Submit</button>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="px-4 py-6 max-w-7xl m-auto max-sm:px-2">
+      <header class="flex justify-between items-center">
+        <nav class="flex justify-between max-md:hidden max-lg:hidden font-bold">
+          <a
+            href="#"
+            class="hover:bg-[#fafafa] px-4 py-1 rounded-full hover:text-[#131313]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+            >Why</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+            >FAQ</a
+          >
+          <a
+            href="#"
+            class="hover:bg-[#fafafa] hover:text-[#131313] px-4 py-2 rounded-full"
+            >Contact us</a
+          >
+        </nav>
 
-</section>
-            
-<ul class="flex justify-center items-center space-x-16 slides max-xl:hidden ">
-    <li>business automation</li>
-<li>business intelligence</li>
-<li>digital marketing</li>
-<li>customer relationship management</li>
-<li>cybersecurity</li>
-<li>digital trust    </li>     </ul>
-</main>
-           </div>
-</body>
+        <h1 class="font-bold text-2xl">StudioFlow</h1>
+
+        <button class="bg-[#fff] text-[#131313] px-4 py-2 rounded-full">
+          Choose a plan
+        </button>
+      </header>
+      <main
+        class="min-h-[85vh] flex justify-center items-center flex-col max-w-full my-10 max-xl:mt-20 text-center"
+      >
+        <section class="flex flex-col justify-center items-center">
+          <h2 class="text-6xl font-bold mb-6">
+            Elevate Your Business Strategy
+          </h2>
+          <h3 class="font-bold mb-6 text-lg">
+            We craft innovative solutions that redefine success.
+          </h3>
+
+          <button
+            class="bg-[#131313] text-[#fafafa] px-4 py-2 rounded-full font-bold text-lg hover:bg-[#fafafa] hover:text-[#131313]"
+          >
+            Get Started
+          </button>
+        </section>
+
+        <section class="mt-[6rem] max-w-4xl text-[#eee]">
+          <h3 class="text-3xl font-bold mb-6">Why Choose StudioFlow?</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="p-6 border rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold mb-2">Strategic Insights</h4>
+              <p>
+                We analyze your business and provide data-driven strategies.
+              </p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold mb-2">Innovative Solutions</h4>
+              <p>Stay ahead with cutting-edge tools and frameworks.</p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm">
+              <h4 class="text-xl font-bold mb-2">Scalable Growth</h4>
+              <p>Expand your reach and optimize operations effortlessly.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
