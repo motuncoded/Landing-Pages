@@ -1,79 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stretch</title>
-      <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
     <div class="px-6 py-6 max-sm:px-2">
-        <header class="flex justify-between items-center">
-            <h1 class="text-2xl font-bold">stretch.</h1>
-            <nav class="flex space-x-6 max-md:hidden max-lg:hidden">
-                <a href="#" class="flex items-center"><span>Platform</span>  
-                    <img
-                width="20"
-                height="20"
-              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/>
-            </a>
-                <a href="#" class="flex items-center"><span>Use Cases</span>  
-                     <img
-                width="20"
-                height="20"
-              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/></a>
-                <a href="#" class="flex items-center"><span>Why Stretch</span>   
-                    <img
-                width="20"
-                height="20"
-              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/></a>
-                <a href="#" class="flex items-center">
-                    <span>Resources</span>  
-                     <img
-                width="20"
-                height="20"
-              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/></a>
-                <a href="#" class="flex items-center">
-                    <span>Pricing</span>  
-                    <img
-                width="20"
-                height="20"
-              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/></a>
-            </nav>
-            <div class="space-x-4">
-                <button>Log in</button>
-                <button class="border-2 border-[#030303] px-2 py-1 rounded-xl">Get started</button>
-            </div>
-           </header>
-        <main class=" w-[100%]">
-            <section class="grid  my-8 xl:grid-cols-2 ">           
-                 <div class="max-w-[100%] h-[100%] m-auto w-[100%]">
-                <img src="./assets/people.jpg" class="rounded-[50px] max-md:rounded-none w-[100%]" alt="background-hero"/>
-            </div>
-                <div class="bg-[#ffffff] rounded-[50px]  xl:-ml-14 h-[450px] lg:h-[400px] xl:h-[100%] max-md:rounded-none">
-                    
-                    <div class="m-6 flex items-center flex-col ">
-                        <h2 class="text-6xl  font-semibold xl:text-8xl">Everything you need to scale a global team</h2>
-                    <p class="mt-6 text-gray-500 font-medium ">Grow bigger with Stretch. Hire faster by adopting the best HR processes, simplify payroll, and stay compliant, no matter where your team is located.</p>
-                </div>
-           
-           <div class="mx-6 mt-6 flex-col w-[400px]">
-            <label for="email"></label>
-<input type="email" name="" id="" class="border-2 border-[#030303] px-2 py-1 rounded-xl">
-<button class=" bg-[#030303] text-white px-4 py-1 rounded-xl">Submit</button>
+      <header class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold">stretch.</h1>
+        <nav class="flex space-x-6 max-md:hidden max-lg:hidden">
+          <a href="#" class="flex items-center">
+            <span>Platform</span>
+            <img
+              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png"
+              alt="expand"
+              width="20"
+              height="20"
+            />
+          </a>
+          <a href="#" class="flex items-center">
+            <span>Use Cases</span>
+            <img
+              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png"
+              alt="expand"
+              width="20"
+              height="20"
+            />
+          </a>
+          <a href="#" class="flex items-center">
+            <span>Why Stretch</span>
+            <img
+              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png"
+              alt="expand"
+              width="20"
+              height="20"
+            />
+          </a>
+          <a href="#" class="flex items-center">
+            <span>Resources</span>
+            <img
+              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png"
+              alt="expand"
+              width="20"
+              height="20"
+            />
+          </a>
+          <a href="#" class="flex items-center">
+            <span>Pricing</span>
+            <img
+              src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png"
+              alt="expand"
+              width="20"
+              height="20"
+            />
+          </a>
+        </nav>
+        <div class="space-x-4">
+          <button>Log in</button>
+          <button class="border-2 border-[#030303] px-2 py-1 rounded-xl">
+            Get started
+          </button>
         </div>
-</section>
-      <div class="max-w-8xl my-auto mx-6 flex justify-between max-md:flex-col max-md:mx-2">
-        <p class="w-[300px] text-gray-500">More than 14000 businesses use Stretch (and counting)</p>
-      <ul class="flex items-center space-x-6 max-xl:flex-wrap max-md:flex-col max-md:items-start max-md:space-x-0 max-md:space-y-4">
-      <li class="font-semibold  text-[#808080]">Revolut</li>
-      <li class="flex items-center justify-between"><img width="30" height="30" src="./assets/intercom.png" alt="intercom"/><span class="text-[#808080] font-semibold">Intercom</span></li>
-         <li class=" flex items-center justify-center"><img width="30" height="30" src="./assets/red_bull.png" alt="red"/><span class="font-semibold  text-[#808080]">Red Bull</span></li>
-      <li class="flex items-center "><img width="30" height="30" src="./assets/drop_box.png" alt="dropbox"/><span class="text-[#808080] font-semibold">Dropbox</span></li>
-      <li class="font-semibold  text-[#808080] tracking-[-2px]">SUBWAY</li></ul>
+      </header>
+
+      <main class="w-full">
+        <section class="grid my-8 xl:grid-cols-2">
+          <div class="w-full max-w-full h-full m-auto">
+            <img
+              src="./assets/people.jpg"
+              alt="background-hero"
+              class="rounded-[50px] max-md:rounded-none w-full"
+            />
+          </div>
+
+          <div
+            class="bg-white rounded-[50px] xl:-ml-14 h-[450px] lg:h-[400px] xl:h-full max-md:rounded-none"
+          >
+            <div class="m-6 flex flex-col items-center">
+              <h2 class="text-6xl font-semibold xl:text-8xl text-center">
+                Everything you need to scale a global team
+              </h2>
+              <p class="mt-6 text-gray-500 font-medium text-center">
+                Grow bigger with Stretch. Hire faster by adopting the best HR
+                processes, simplify payroll, and stay compliant, no matter where
+                your team is located.
+              </p>
+            </div>
+
+            <div class="mx-6 mt-6 flex flex-col w-[400px]">
+              <label for="email" class="sr-only">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="border-2 border-[#030303] px-2 py-1 rounded-xl mb-2"
+                placeholder="Enter your email"
+              />
+              <button class="bg-[#030303] text-white px-4 py-1 rounded-xl">
+                Submit
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div
+          class="max-w-8xl mx-6 my-auto flex justify-between max-md:flex-col max-md:mx-2"
+        >
+          <p class="w-[300px] text-gray-500">
+            More than 14,000 businesses use Stretch (and counting)
+          </p>
+          <ul
+            class="flex items-center space-x-6 max-xl:flex-wrap max-md:flex-col max-md:items-start max-md:space-x-0 max-md:space-y-4"
+          >
+            <li class="font-semibold text-[#808080]">Revolut</li>
+            <li class="flex items-center space-x-2">
+              <img
+                src="./assets/intercom.png"
+                alt="intercom"
+                width="30"
+                height="30"
+              />
+              <span class="text-[#808080] font-semibold">Intercom</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <img
+                src="./assets/red_bull.png"
+                alt="red bull"
+                width="30"
+                height="30"
+              />
+              <span class="text-[#808080] font-semibold">Red Bull</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <img
+                src="./assets/drop_box.png"
+                alt="dropbox"
+                width="30"
+                height="30"
+              />
+              <span class="text-[#808080] font-semibold">Dropbox</span>
+            </li>
+            <li class="font-semibold text-[#808080] tracking-[-2px]">SUBWAY</li>
+          </ul>
+        </div>
+      </main>
     </div>
-        </main>
-    </div>
-</body>
+  </body>
 </html>

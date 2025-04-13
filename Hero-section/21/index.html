@@ -1,92 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liveblocks</title>
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-     <div class="px-4 py-6 max-w-7xl m-auto max-sm:px-2">
+  </head>
+  <body>
+    <div class="px-4 py-6 max-w-7xl m-auto max-sm:px-2">
       <header class="flex justify-between items-center">
-            <h1 class="font-bold text-2xl pr-10 hidden max-xl:flex"> 
-                <img src="assets/shape.png" /><span>liveblocks</span></h1>
-        <nav class="flex justify-between items-center  max-xl:hidden ">
-        
-                        <h1 class="font-bold text-2xl pr-10 flex ">
-                          <img src="assets/shape.png" /><span>liveblocks</span></h1>
-   
-   <div>                    <a
-            href="#"
-            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
-            >Products</a
-          >
-          <a
-            href="#"
-            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
-            >Resources</a
-          >
-          <a
-            href="#"
-            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
-            >Docs</a
-          >
-          <a
-            href="#"
-            class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
-            >Pricing</a
-          >
-         </div> 
+        <!-- Mobile Logo -->
+        <div>
+          <h1 class="font-bold text-2xl pr-10 hidden max-xl:flex">
+            <img src="assets/pentagon.png" alt="Logo" />
+            <span>liveblocks</span>
+          </h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="flex justify-between items-center max-xl:hidden">
+          <h1 class="font-bold text-2xl pr-10 flex">
+            <img src="assets/shape.png" alt="Logo" />
+            <span>liveblocks</span>
+          </h1>
+          <div>
+            <a
+              href="#"
+              class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+              >Products</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+              >Docs</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#fafafa] px-4 py-2 rounded-full hover:text-[#131313]"
+              >Pricing</a
+            >
+          </div>
         </nav>
 
-
-        
-<div>
-        <button class="px-4 py-2 rounded-full hover:bg-[#fafafa] hover:text-[#131313]">
-          Sign in
-        </button>
-        
-        <button class="bg-[#2e2e2e] hover:bg-[#fafafa] hover:text-[#131313] px-4 py-2 rounded-full">
-          Sign up 
-        </button>
-    </div>
+        <!-- Right Buttons -->
+        <div>
+          <button
+            class="px-4 py-2 rounded-full hover:bg-[#fafafa] hover:text-[#131313]"
+          >
+            Sign in
+          </button>
+          <button
+            class="bg-[#2e2e2e] hover:bg-[#fafafa] hover:text-[#131313] px-4 py-2 rounded-full"
+          >
+            Sign up
+          </button>
+        </div>
       </header>
+
+      <!-- Main Content -->
       <main class="flex justify-center items-center min-h-[90vh] flex-col">
         <div class="flex justify-center items-center flex-col mt-20">
-        <img src="./assets/triangle.png" alt="triangle-icon" class="w-20 h-20"/>
-        <div class="flex justify-center items-center flex-col">
-        <h2 class="text-[#808080] tracking-[.2rem] my-2 uppercase">Infrastructure</h2>
-        <h3 class="md:text-6xl text-3xl font-bold text-center">Build, host and scale </h3>
-       <h3 class="md:text-6xl text-3xl font-bold text-center ">your collaborative product.</h3> 
+          <img
+            src="./assets/triangle.png"
+            alt="triangle-icon"
+            class="w-20 h-20"
+          />
+          <div class="flex justify-center items-center flex-col">
+            <h2 class="text-[#808080] tracking-[.2rem] my-2 uppercase">
+              Infrastructure
+            </h2>
+            <h3 class="md:text-6xl text-3xl font-bold text-center">
+              Build, host and scale
+            </h3>
+            <h3 class="md:text-6xl text-3xl font-bold text-center">
+              your collaborative product.
+            </h3>
+          </div>
+          <button
+            class="hover:bg-[#2e2e2e] mt-6 bg-[#fafafa] hover:text-white text-[#131313] px-4 py-2 rounded-md"
+          >
+            Sign up for free
+          </button>
         </div>
-    <button class="hover:bg-[#2e2e2e] mt-6 bg-[#fafafa] hover:text-white text-[#131313] px-4 py-2 rounded-md">Sign up for free</button></div>
+
+        <!-- Features Section -->
         <section>
-           <div class="grid grid-cols-1 md:grid-cols-2 grid-cols-1 gap-6 mt-20 w-full max-w-full px-4">
-   
-      <div class="p-4 border border-gray-700 rounded-lg ">
-        <h4 class="text-lg font-semibold">Collaboration infrastructure</h4>
-        <p class="text-gray-400 text-sm mt-2">WebSocket edge infrastructure and reliable connection engine.</p>
-      </div>
-      
+          <div
+            class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-20 w-full max-w-full px-4"
+          >
+            <div class="p-4 border border-gray-700 rounded-lg">
+              <h4 class="text-lg font-semibold">
+                Collaboration infrastructure
+              </h4>
+              <p class="text-gray-400 text-sm mt-2">
+                WebSocket edge infrastructure and reliable connection engine.
+              </p>
+            </div>
 
-      <div class="p-4 border border-gray-700 rounded-lg">
-        <h4 class="text-lg font-semibold">Zero configuration</h4>
-        <p class="text-gray-400 text-sm mt-2">Scale to millions. No complex configuration required.</p>
-      </div>
-     
-      <div class="p-4 border border-gray-700 rounded-lg">
-        <h4 class="text-lg font-semibold">Effortless scaling</h4>
-        <p class="text-gray-400 text-sm mt-2">Built to handle any traffic on your collaborative experiences.</p>
-      </div>
+            <div class="p-4 border border-gray-700 rounded-lg">
+              <h4 class="text-lg font-semibold">Zero configuration</h4>
+              <p class="text-gray-400 text-sm mt-2">
+                Scale to millions. No complex configuration required.
+              </p>
+            </div>
 
- 
-      <div class="p-4 border border-gray-700 rounded-lg">
-        <h4 class="text-lg font-semibold">No maintenance required</h4>
-        <p class="text-gray-400 text-sm mt-2">Spend your time building, not maintaining infrastructure.</p>
-      </div>
-    </div>
+            <div class="p-4 border border-gray-700 rounded-lg">
+              <h4 class="text-lg font-semibold">Effortless scaling</h4>
+              <p class="text-gray-400 text-sm mt-2">
+                Built to handle any traffic on your collaborative experiences.
+              </p>
+            </div>
+
+            <div class="p-4 border border-gray-700 rounded-lg">
+              <h4 class="text-lg font-semibold">No maintenance required</h4>
+              <p class="text-gray-400 text-sm mt-2">
+                Spend your time building, not maintaining infrastructure.
+              </p>
+            </div>
+          </div>
         </section>
       </main>
-</body>
+    </div>
+  </body>
 </html>
