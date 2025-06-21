@@ -1,7 +1,5 @@
 const { Router } = require("express");
-const {
-  register,
-  login } = require("../controllers/userController");
+const { register, login } = require("../controllers/userController");
 
 const userRouter = Router();
 
@@ -22,7 +20,7 @@ const userRouter = Router();
  *         - username
  *         - password
  *         - gmail
- *    
+ *
  *       properties:
  *         username:
  *           type: string
@@ -34,7 +32,7 @@ const userRouter = Router();
  *           type: string
  *           format: gmail
  *           example: johndoe@example.com
- *        
+ *
  *     UserLogin:
  *       type: object
  *       required:
@@ -49,7 +47,7 @@ const userRouter = Router();
  *           type: string
  *           format: password
  *           example: password123
- *    
+ *
  */
 
 /**
@@ -66,7 +64,7 @@ const userRouter = Router();
  *             $ref: '#/components/schemas/UserRegister'
  *     responses:
  *       201:
- *         description: User registered successfully. 
+ *         description: User registered successfully.
  *         content:
  *           application/json:
  *             schema:
@@ -89,7 +87,6 @@ const userRouter = Router();
  *                   example: Gmail already registered
  */
 userRouter.post("/auth/register", register);
-
 
 /**
  * @swagger
@@ -130,6 +127,5 @@ userRouter.post("/auth/register", register);
  *         $ref: '#/components/responses/NotFoundError'
  */
 userRouter.post("/auth/login", login);
-
 
 module.exports = userRouter;

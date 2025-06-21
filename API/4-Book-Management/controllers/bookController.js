@@ -1,17 +1,12 @@
-
-
 const bookModel = require("../models/bookModel");
 const categoryModel = require("../models/categoryModel");
 
-
-
-// Create a new book
 // Create a new book
 const create_book = async (req, res, next) => {
   const { title, author, genre, category } = req.body;
-  
+
   try {
-  const existingBook = await bookModel.findOne({title});
+    const existingBook = await bookModel.findOne({ title });
     if (existingBook) {
       return res.status(409).json({
         message: "Book already exists",
@@ -35,14 +30,15 @@ const create_book = async (req, res, next) => {
     });
 
     await newBook.save();
-    
+
     // Now populate the category in a separate query
-    const createdBook = await bookModel.findById(newBook._id)
-      .populate('category', 'name');
-    
+    const createdBook = await bookModel
+      .findById(newBook._id)
+      .populate("category", "name");
+
     res.status(201).json({
-    createdBook,
-      message: 'Book created successfully'
+      createdBook,
+      message: "Book created successfully",
     });
   } catch (error) {
     next(error);
@@ -50,35 +46,32 @@ const create_book = async (req, res, next) => {
 };
 
 // Get all books
-const get_all_books = async (req, res,next) => {
-
+const get_all_books = async (req, res, next) => {
   try {
-    const get_books = await bookModel.find().populate("category", "name");;
+    const get_books = await bookModel.find().populate("category", "name");
     if (!get_books) {
-      return res.status(404).json({ message:"Books not found" });
-    }
-    res.status(200).json({get_books, message:'Books retrieved successfully'})
-  }
-  catch (error) {
-    next(error)
-    };
-};
-
-// Get a single book by ID
-const get_a_book = async (req, res,next) => {
-  const { id } = req.params;
-  try {
-
-    const get_book = await bookModel.findById(id)
-    if (!get_book) {
-      return res.status(404).json({ message: "Book not found" });
+      return res.status(404).json({ message: "Books not found" });
     }
     res
       .status(200)
-      .json({ get_book, message: "Book retrieved successfully" });
-  } catch(error)  {
-   next(error)
+      .json({ get_books, message: "Books retrieved successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// Get a single book by ID
+const get_a_book = async (req, res, next) => {
+  const { id } = req.params;
+  try {
+    const get_book = await bookModel.findById(id);
+    if (!get_book) {
+      return res.status(404).json({ message: "Book not found" });
     }
+    res.status(200).json({ get_book, message: "Book retrieved successfully" });
+  } catch (error) {
+    next(error);
+  }
 };
 
 // Update a book by ID
@@ -92,8 +85,9 @@ const update_a_book = async (req, res, next) => {
     if (!categoryDoc) {
       categoryDoc = new categoryModel({ name: category });
     }
-      await categoryDoc.save();
-      const update_book = await bookModel.findByIdAndUpdate(
+    await categoryDoc.save();
+    const update_book = await bookModel
+      .findByIdAndUpdate(
         id,
         {
           title,
@@ -101,20 +95,18 @@ const update_a_book = async (req, res, next) => {
           genre,
           category: categoryDoc._id,
         },
-        { new: true }
-      ).populate("category");
+        { new: true },
+      )
+      .populate("category");
 
-      if (!update_book) {
-        return res.status(404).json({ message: "Book not found" });
-      }
-      res
-        .status(200)
-        .json({ update_book, message: "Book updated successfully" });
-    } catch (error) {
-      next(error)
+    if (!update_book) {
+      return res.status(404).json({ message: "Book not found" });
     }
-  };
-
+    res.status(200).json({ update_book, message: "Book updated successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
 
 // Delete a book by ID
 const delete_a_book = async (req, res) => {
@@ -136,5 +128,5 @@ module.exports = {
   get_all_books,
   get_a_book,
   update_a_book,
-  delete_a_book
+  delete_a_book,
 };

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: bouncingBall 1s infinite;
+}
+
+@keyframes bouncingBall {
+  50% {
+    transform: translateY(-240px);
+    animation-timing-function: ease-in;
+  }
+}

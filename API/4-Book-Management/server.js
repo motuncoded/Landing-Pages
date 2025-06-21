@@ -1,7 +1,7 @@
 const express = require("express");
 const userRouter = require("./router/userRouter.js");
 const bookRouter = require("./router/bookRouter.js");
-const categoryRouter = require("./router/categoryRouter.js")
+const categoryRouter = require("./router/categoryRouter.js");
 const connectdb = require("./config/dbController");
 const cookieParser = require("cookie-parser");
 const swaggerUi = require("swagger-ui-express");
@@ -23,7 +23,6 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/api", userRouter);
 app.use("/api", bookRouter);
 app.use("/api", categoryRouter);
-
 
 app.listen(port, () => {
   console.log(`Book Management API is running at ${port}`);

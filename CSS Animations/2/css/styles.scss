@@ -1,0 +1,40 @@
+// styles.scss
+
+$ball-size: 10px;
+$final-size: 3000px;
+$ball-color: #ff5e57;
+$animation-duration: 2s;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: white;
+}
+
+.ball {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: $ball-size;
+  height: $ball-size;
+  background-color: $ball-color;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: expandBall $animation-duration ease-out forwards;
+}
+
+@keyframes expandBall {
+  0% {
+    width: $ball-size;
+    height: $ball-size;
+  }
+  100% {
+    width: $final-size;
+    height: $final-size;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
