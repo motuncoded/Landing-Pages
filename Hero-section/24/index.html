@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todor Dimov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="flex justify-between items-center py-4 px-8">
+      <h1 class="font-bold text-2xl">Todor Dimov</h1>
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-8">
+          <li><a href="#about" class="font-semibold">About</a></li>
+          <li><a href="#work" class="font-semibold">Work</a></li>
+          <li><a href="#process" class="font-semibold">Process</a></li>
+          <li><a href="#contact" class="font-semibold">Drop me a line</a></li>
+        </ul>
+      </nav>
+      <button class="flex items-center space-x-2" id="mode-toggle">
+        <img
+          src="/24/assets/light.svg"
+          alt="light-icon"
+          class="w-5 h-5"
+          id="light-icon"
+        />
+        <span id="light-text">Light</span>
+      </button>
+    </header>
+    <main class="min-h-[90vh] flex items-center py-2 px-2 md:px-4">
+      <h2
+        class="font-normal text-[10rem] md:text-[18rem] leading-[15.2rem] flex justify-start items-center"
+      >
+        Digital designer
+        <span
+          class="text-sm leading-[1rem] font-semibold flex justify-center self-end mr-[12rem] mb-[1rem]"
+          >specialised in Web Design, UX / UI, Webflow and Front End
+          Development.
+        </span>
+      </h2>
+    </main>
+  </body>
+
+  <script>
+    const toggleButton = document.getElementById("mode-toggle");
+    const body = document.body;
+    const icon = document.getElementById("light-icon");
+    const text = document.getElementById("light-text");
+
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        // Change icon and text for dark mode
+        icon.src = "/24/assets/dark.svg"; // your dark mode icon
+        text.textContent = "Dark";
+      } else {
+        // Change icon and text for light mode
+        icon.src = "/24/assets/light.svg"; // your light mode icon
+        text.textContent = "Light";
+      }
+    });
+  </script>
+</html>
