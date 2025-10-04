@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="container mx-auto p-4 flex flex-col items-center justify-center h-screen bg-gray-900"
+    >
+      <form
+        class="bg-white p-6 rounded shadow-md w-full max-w-sm"
+        id="signUpForm"
+      >
+        <h2 class="text-2xl font-bold mb-6">Sign Up To A New Account</h2>
+        <div class="flex justify-between items-center space-x-4 mb-4">
+          <div class="">
+            <label class="block text-gray-700 font-bold mb-2" for="firstName"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="firstName"
+              class="w-full border-b outline-none"
+              required
+            />
+          </div>
+          <div class="">
+            <label class="block text-gray-700 font-bold mb-2" for="lastName"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              id="lastName"
+              class="w-full border-b outline-none"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-700 font-bold mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            class="w-full border-b outline-none"
+          />
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-700 font-bold mb-2">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            class="w-full border-b outline-none"
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-bold mb-2"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            required
+            class="w-full border-b outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <p id="signUpMessage" class="text-green-800 mb-2 hidden">
+            Sign up successfully
+          </p>
+          <button
+            type="submit"
+            class="bg-gray-900 hover:bg-black-700 text-white font-bold py-2 px-4 rounded"
+            id="submitBtn"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="text-center mt-4">
+          <p class="ml-2">
+            Already have an account?
+            <a href="/2-Authetication/signin.html" class="hover:underline"
+              >Sign in</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="/2-Authetication/index.js"></script>
+  </body>
+</html>
