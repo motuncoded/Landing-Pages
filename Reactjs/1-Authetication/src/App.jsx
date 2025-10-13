@@ -1,14 +1,9 @@
-
-import './App.css'
-import Signin from './components/Signin'
-import Signup from './components/Signup'
+import "./App.css";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 
 function App() {
-
-  return (
-      <>
-      </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
