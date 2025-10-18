@@ -9,9 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <style>
       body {
         font-family: "Inter", sans-serif;
+      }
+      h2{
+          font-family: "Goldman", sans-serif;
+
       }
     </style>
   </head>
@@ -27,17 +34,86 @@
         <li><a href="#" class="hover:underline">Contact</a></li>
         <li><a href="#" class="hover:underline">Cart</a></li>
       </ul>
-              <img src="./search-icon.png" alt="search" class="w-5 h-5"/>
+              <img src="./assests/search-icon.png" alt="search" class="w-5 h-5"/>
 
     </nav>
 
     </header>
 
     
-    <section>
-      <h2>Draped</h2>
+   <main class="grid md:grid-cols-2 gap-8 px-2 border-b border-gray-400">
+      <!-- Left Section -->
+      <section class="border-r border-gray-300 px-1 pt-6 ">
+        <h2 class="text-5xl md:text-6xl font-extrabold  flex flex-col my-10">
+          Draped <span >subtly</span>
+        </h2>
+        <p class="mt-2 text-gray-600 max-w-md ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          vehicula consectetur tellus at gravida. Duis facilisis auctor turpis
+          vitae sodales.
+        </p>
 
-    </section>
+        <!-- Collapsible details -->
+        <div class="mt-20 space-y-4">
+          <details class="border-b pb-2 border-gray-400">
+            <summary class="flex justify-between items-center cursor-pointer font-medium">
+              Specifications
+              <span>→</span>
+            </summary>
+            <p class="mt-2 text-gray-600 text-sm">
+              Details about product specifications.
+            </p>
+          </details>
+
+          <details class="border-b border-gray-400 pb-2">
+            <summary class="flex justify-between items-center cursor-pointer font-medium">
+              Sizes
+              <span >→</span>
+            </summary>
+            <p class="mt-2 text-gray-600 text-sm">Available in S, M, L, XL.</p>
+          </details>
+
+          <details class="border-b pb-2 ">
+            <summary class="flex justify-between items-center cursor-pointer font-medium">
+              Materials
+              <span>→</span>
+            </summary>
+            <p class="mt-2 text-gray-600 text-sm">Made from 100% organic cotton.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Right Section -->
+      <section class="flex flex-col gap-6 pt-6">
+        <img
+          src="./assests/portrait-young-motivated-african-fitness-man-earphones.jpg"
+          alt="Product"
+          class="w-full h-[300px] rounded-lg object-cover "
+        />
+        <div class="flex justify-between items-center">
+          <section>
+ <h3 class="font-semibold text-lg">Specification</h3>
+          <p class="text-gray-600 text-sm mt-1 max-w-sm">
+            Everything Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+             <button
+            class="mt-4  border-b border-gray-600 transition"
+          >
+            ADD TO CART
+          </button>
+          </section>
+         
+<section class="mt-4">
+       
+
+          <div class=" text-sm text-gray-600 space-y-3">
+            <p class="flex flex-col "><span class="font-semibold">Materials</span> Organic cotton</p>
+            <p class="flex flex-col "><span class="font-semibold">Colours</span> Dark blue</p>
+            <p class="flex flex-col "><span class="font-semibold">Article number</span> #451874</p>
+          </div>
+        </div>
+      </section>
+    </main>
  
   </body>
 </html>
