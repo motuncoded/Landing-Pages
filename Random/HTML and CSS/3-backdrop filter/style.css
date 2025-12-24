@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/happy-multiethnic-family-with-boy-kid-spend-time-restaurant-relationships-african-man-white-european-woman.jpg) no-repeat center center/cover;
+}
+.modal{
+    width: 300px;
+    height: 300px;
+    background-color: #3c3c3c40;
+backdrop-filter: blur(10px) brightness(80%) contrast(95%) hue-rotate(200deg) sepia(20%) saturate(50%);
+    border-radius: 15px;
+    cursor: move;
+    border: 2px solid whitesmoke;
+      position: absolute;
+     
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draggable Modal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  
+  </style>
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-content">
+    </div>
+  </div>
+
+  <script>
+    const modal = document.querySelector('.modal');
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    modal.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      offsetX = e.clientX - modal.offsetLeft;
+      offsetY = e.clientY - modal.offsetTop;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        modal.style.left = `${e.clientX - offsetX}px`;
+        modal.style.top = `${e.clientY - offsetY}px`;
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+  </script>
+</body>
+</html>
