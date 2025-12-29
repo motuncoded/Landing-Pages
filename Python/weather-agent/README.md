@@ -1,2 +1,2 @@
-to activate 
- source venv/Scripts/activate
+to activate
+source venv/Scripts/activate

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,14 +6,23 @@
     <title>Pallet Ross</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class=" bg-white text-gray-800 font-sans">
+  <body class="bg-white text-gray-800 font-sans">
     <!-- Navbar -->
-    <header class="flex justify-between items-center py-6 px-8 max-w-7xl mx-auto">
+    <header
+      class="flex justify-between items-center py-6 px-8 max-w-7xl mx-auto"
+    >
       <div class="flex items-center gap-2">
-        <img src="./assets/right-arrows.png" alt="" srcset="" class="w-5 h-5 -rotate-45	"/>
+        <img
+          src="./assets/right-arrows.png"
+          alt=""
+          srcset=""
+          class="w-5 h-5 -rotate-45"
+        />
         <h1 class="font-semibold text-lg">Pallet Ross</h1>
       </div>
-      <nav class="hidden md:flex items-center gap-8 text-gray-700 font-semibold">
+      <nav
+        class="hidden md:flex items-center gap-8 text-gray-700 font-semibold"
+      >
         <a href="#" class="hover:text-black">Get Started</a>
         <a href="#" class="hover:text-black">Create catalog</a>
         <a href="#" class="hover:text-black">Pricing</a>
@@ -22,20 +31,35 @@
         <a href="#" class="hover:text-black">E-Commerce</a>
       </nav>
       <div class="flex items-center gap-4">
-        <button class="w-8 h-8 flex justify-center items-center bg-gray-100 rounded-full hover:bg-gray-200">
-          <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/person-male.png" alt="person-male"/>
+        <button
+          class="w-8 h-8 flex justify-center items-center bg-gray-100 rounded-full hover:bg-gray-200"
+        >
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material-rounded/24/person-male.png"
+            alt="person-male"
+          />
         </button>
-        <button class="w-8 h-8 flex justify-center items-center bg-gray-100 rounded-full hover:bg-gray-200">
-         <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/sun--v1.png" alt="sun--v1"/>
+        <button
+          class="w-8 h-8 flex justify-center items-center bg-gray-100 rounded-full hover:bg-gray-200"
+        >
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material-outlined/24/sun--v1.png"
+            alt="sun--v1"
+          />
         </button>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="text-center mt-8 px-6">
-      <h2 class="text-4xl md:text-5xl max-w-2xl mx-auto font-semibold text-gray-900 tracking-tight">
-        A place to display your
-       masterpiece.
+      <h2
+        class="text-4xl md:text-5xl max-w-2xl mx-auto font-semibold text-gray-900 tracking-tight"
+      >
+        A place to display your masterpiece.
       </h2>
       <!-- <p class="mt-4 text-gray-600 max-w-2xl mx-auto ">
         Artists can display their masterpieces, and buyers can discover and purchase works that resonate with them.
@@ -43,63 +67,41 @@
     </section>
 
     <!-- Artwork Gallery -->
-   <div class="mt-8 relative mx-auto h-[300px] w-[900px]">
-  <img
-    src="/32/assets/art_1.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           -translate-x-[420px] -translate-y-[120px]
-           -rotate-6  rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[125px]"
-  />
+    <div
+      class="mt-8 relative md:grid md:grid-cols-1 mx-auto h-[300px] w-[900px]"
+    >
+      <img
+        src="/32/assets/art_1.jpg"
+        class="absolute md:relative left-1/2 top-1/2 h-[240px] w-[180px] -translate-x-[420px] -translate-y-[120px] -rotate-6 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[125px]"
+      />
 
-  <img
-    src="/32/assets/art_2.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           -translate-x-[320px] -translate-y-[130px]
-           -rotate-2  rounded-2xl object-cover
-           transition-transform duration-300  hover:-translate-y-[135px]"
-  />
+      <img
+        src="/32/assets/art_2.jpg"
+        class="absolute md:relative left-1/2 top-1/2 h-[240px] w-[180px] -translate-x-[320px] -translate-y-[130px] -rotate-2 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[135px]"
+      />
 
-  <img
-    src="/32/assets/art_3.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           -translate-x-[220px] -translate-y-[140px]
-            -rotate-0  rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[145px]"
-  />
+      <img
+        src="/32/assets/art_3.jpg"
+        class="absolute left-1/2 top-1/2 h-[240px] w-[180px] -translate-x-[220px] -translate-y-[140px] -rotate-0 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[145px]"
+      />
 
-  <img
-    src="/32/assets/art_4.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           -translate-x-[120px] -translate-y-[150px]
-           rotate-2  rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[155px]"
-  />
+      <img
+        src="/32/assets/art_4.jpg"
+        class="absolute left-1/2 top-1/2 h-[240px] w-[180px] -translate-x-[120px] -translate-y-[150px] rotate-2 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[155px]"
+      />
 
-  <img
-    src="/32/assets/art_5.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           -translate-x-[20px] -translate-y-[140px]
-           rotate-0  rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[145px]"
-  />
-  <img
-    src="/32/assets/art_6.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           translate-x-[120px] -translate-y-[130px]
-            rotate-2  rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[135px]"
-  />
-  <img
-    src="/32/assets/art_7.jpg"
-    class="absolute left-1/2 top-1/2 h-[240px] w-[180px]
-           translate-x-[220px] -translate-y-[120px]
-           rotate-6 rounded-2xl object-cover
-           transition-transform duration-300 hover:-translate-y-[125px]"
-  />
-</div>
-
-
-   
+      <img
+        src="/32/assets/art_5.jpg"
+        class="absolute left-1/2 top-1/2 h-[240px] w-[180px] -translate-x-[20px] -translate-y-[140px] rotate-0 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[145px]"
+      />
+      <img
+        src="/32/assets/art_6.jpg"
+        class="absolute left-1/2 top-1/2 h-[240px] w-[180px] translate-x-[120px] -translate-y-[130px] rotate-2 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[135px]"
+      />
+      <img
+        src="/32/assets/art_7.jpg"
+        class="absolute left-1/2 top-1/2 h-[240px] w-[180px] translate-x-[220px] -translate-y-[120px] rotate-6 rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-[125px]"
+      />
+    </div>
   </body>
 </html>

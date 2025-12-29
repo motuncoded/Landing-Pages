@@ -1,82 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open Source Adoption</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-purple-100 via-yellow-100 via-pink-100 to-blue-100 min-h-screen font-sans">
-
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between px-2 md:px-10 py-6">
-    <div class="font-bold text-lg flex items-center">
-        <img src="./assets/triangle.png" alt="logo" class="inline w-6 h-6 mr-2"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Source Adoption</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-purple-100 via-yellow-100 via-pink-100 to-blue-100 min-h-screen font-sans"
+  >
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-2 md:px-10 py-6">
+      <div class="font-bold text-lg flex items-center">
+        <img
+          src="./assets/triangle.png"
+          alt="logo"
+          class="inline w-6 h-6 mr-2"
+        />
         <span>INDEX</span>
-    </div>
-    <ul class="hidden md:flex items-center gap-8 font-semibold text-gray-700">
-      <li><a href="#" class="hover:text-black">Product</a></li>
-      <li><a href="#" class="hover:text-black">Solutions</a></li>
-      <li><a href="#" class="hover:text-black">Resources</a></li>
-      <li><a href="#" class="hover:text-black">Pricing</a></li>
-    </ul>
-    <div class="flex items-center gap-4 font-semibold">
-      <a href="#" class="text-gray-700 hover:text-black">Sign up</a>
-      <a href="#" class="bg-black text-white px-5 py-2 rounded-full hover:opacity-90 transition">Request Demo</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="text-center mt-10  px-4 md:px-6">
-    <div class="border-4 border-white rounded-3xl p-10 transparent max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
-        <span class="text-white">&lt;</span> Open source <span class="text-white">/&gt;</span><br />adoption at scale
-      </h1>
-      <p class="text-gray-600 mb-8">Accelerate Development with Native Integrations.</p>
-      <button class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
-        Start now
-      </button>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="grid md:grid-cols-3 gap-6 px-6 md:px-20 mt-14">
-    <!-- Git Card -->
-    <div class="bg-pink-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-      <div class="flex items-center gap-3 mb-3">
-        <div class="">
-          <img src="./assets/git.png" alt="git-logo"/>
-        </div>
-        <h3 class="text-lg font-semibold">Git</h3>
       </div>
-      <p class="text-gray-700 mb-4">Open source distributed version control system to handle any size projects.</p>
-      <a href="#" class="text-sm font-medium  hover:underline">LEARN MORE →</a>
-    </div>
-
-    <!-- AngularJS Card -->
-    <div class="bg-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-      <div class="flex items-center gap-3 mb-3">
-        <div class="">
-         <img src="./assets/angular.png" alt="angularjs-logo"/>
-        </div>
-        <h3 class="text-lg font-semibold">AngularJS</h3>
+      <ul class="hidden md:flex items-center gap-8 font-semibold text-gray-700">
+        <li><a href="#" class="hover:text-black">Product</a></li>
+        <li><a href="#" class="hover:text-black">Solutions</a></li>
+        <li><a href="#" class="hover:text-black">Resources</a></li>
+        <li><a href="#" class="hover:text-black">Pricing</a></li>
+      </ul>
+      <div class="flex items-center gap-4 font-semibold">
+        <a href="#" class="text-gray-700 hover:text-black">Sign up</a>
+        <a
+          href="#"
+          class="bg-black text-white px-5 py-2 rounded-full hover:opacity-90 transition"
+          >Request Demo</a
+        >
       </div>
-      <p class="text-gray-700 mb-4">Toolset for building the framework most suited to your application development.</p>
-      <a href="#" class="text-sm font-medium hover:underline">LEARN MORE →</a>
-    </div>
+    </nav>
 
-    <!-- React Card -->
-    <div class="bg-gray-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-      <div class="flex items-center gap-3 mb-3">
-        <div class="w-[52px] h-[52px]">
-         <img src="./assets/react.png" alt="react-logo"  />
-        </div>
-        <h3 class="text-lg font-semibold">React</h3>
+    <!-- Hero Section -->
+    <section class="text-center mt-10 px-4 md:px-6">
+      <div
+        class="border-4 border-white rounded-3xl p-10 transparent max-w-4xl mx-auto"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
+          <span class="text-white">&lt;</span> Open source
+          <span class="text-white">/&gt;</span><br />adoption at scale
+        </h1>
+        <p class="text-gray-600 mb-8">
+          Accelerate Development with Native Integrations.
+        </p>
+        <button
+          class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition"
+        >
+          Start now
+        </button>
       </div>
-      <p class="text-gray-700 mb-4">Front-end JavaScript library for building user interfaces or UI components.</p>
-      <a href="#" class="text-sm font-medium  hover:underline">LEARN MORE →</a>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <!-- Features Section -->
+    <section class="grid md:grid-cols-3 gap-6 px-6 md:px-20 mt-14">
+      <!-- Git Card -->
+      <div
+        class="bg-pink-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition"
+      >
+        <div class="flex items-center gap-3 mb-3">
+          <div class="">
+            <img src="./assets/git.png" alt="git-logo" />
+          </div>
+          <h3 class="text-lg font-semibold">Git</h3>
+        </div>
+        <p class="text-gray-700 mb-4">
+          Open source distributed version control system to handle any size
+          projects.
+        </p>
+        <a href="#" class="text-sm font-medium hover:underline">LEARN MORE →</a>
+      </div>
+
+      <!-- AngularJS Card -->
+      <div
+        class="bg-yellow-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition"
+      >
+        <div class="flex items-center gap-3 mb-3">
+          <div class="">
+            <img src="./assets/angular.png" alt="angularjs-logo" />
+          </div>
+          <h3 class="text-lg font-semibold">AngularJS</h3>
+        </div>
+        <p class="text-gray-700 mb-4">
+          Toolset for building the framework most suited to your application
+          development.
+        </p>
+        <a href="#" class="text-sm font-medium hover:underline">LEARN MORE →</a>
+      </div>
+
+      <!-- React Card -->
+      <div
+        class="bg-gray-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition"
+      >
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-[52px] h-[52px]">
+            <img src="./assets/react.png" alt="react-logo" />
+          </div>
+          <h3 class="text-lg font-semibold">React</h3>
+        </div>
+        <p class="text-gray-700 mb-4">
+          Front-end JavaScript library for building user interfaces or UI
+          components.
+        </p>
+        <a href="#" class="text-sm font-medium hover:underline">LEARN MORE →</a>
+      </div>
+    </section>
+  </body>
 </html>

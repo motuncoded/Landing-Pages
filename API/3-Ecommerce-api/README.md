@@ -127,7 +127,6 @@ npm install
 ```
 
 4. Set up environment variables:
-
    - Create a `.env` file in the root directory.
    - Add necessary environment variables (e.g., database connection strings).
 
